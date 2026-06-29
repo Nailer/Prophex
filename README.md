@@ -79,7 +79,7 @@ PROPHEX is a smart transaction infrastructure stack for Solana that:
 ### 1. Clone and Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/prophex.git
+git clone https://github.com/Nailer/Prophex.git
 cd prophex
 npm install
 ```
