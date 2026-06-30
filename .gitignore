@@ -1,6 +1,5 @@
 node_modules/
 dist/
-logs/
 *.log
 .env
 submission-wallet.json
