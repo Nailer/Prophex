@@ -1,0 +1,674 @@
+[
+  {
+    "bundleId": "bb245f448b637165f849c8979103cf94ac7a886f802f3c96a4d09abdcc6b3e2e",
+    "runId": "prophex_run_001",
+    "mode": "NORMAL",
+    "timestamps": {
+      "created": 1782813176074,
+      "aiDecisionAt": 1782813176174,
+      "heldUntil": null,
+      "submitted": 1782813176085,
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "slots": {
+      "blockhashFetchedAt": "429855348",
+      "blockhashCommitment": "confirmed",
+      "blockhashAgeAtSubmit": 1,
+      "submitted": "429855349",
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "tip": {
+      "lamports": 6286,
+      "account": "Cw8CFyM9FkoMi7K7Crf6HNQqf4uEMzpKw6QNghXLvLkY",
+      "percentile": "p75",
+      "derivedFromLiveTipData": true
+    },
+    "aiDecision": {
+      "action": "SUBMIT",
+      "tipPercentile": "p75",
+      "targetLeaderScore": null,
+      "targetLeaderSkipRate": null,
+      "holdSlots": 0,
+      "confidence": "LOW",
+      "reasoning": "Fallback decision: AI evaluation failed. Using p75 tip (6286 lamports) with immediate submission. Blockhash has 149 slots remaining. Manual review recommended.",
+      "flags": [
+        "FALLBACK_DECISION",
+        "AGENT_EVALUATION_FAILED"
+      ]
+    },
+    "outcome": "SUBMITTED",
+    "failureClass": null,
+    "latencies": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "slotDeltas": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "signature": "KJT9xsvjXij8BYEUqiVESsJJs89ADT8Y2wmkAZNTiEQQRXUgiNcgDHmhEnz34FQswPvQj7oGJSoHR53bikW8LUs",
+    "explorerUrl": "https://solscan.io/tx/KJT9xsvjXij8BYEUqiVESsJJs89ADT8Y2wmkAZNTiEQQRXUgiNcgDHmhEnz34FQswPvQj7oGJSoHR53bikW8LUs"
+  },
+  {
+    "bundleId": "5d9491e02f32ecc00a353b01e2ee6c9ce3c3cbeb7c01fa192b737a4021bdbb8b",
+    "runId": "prophex_run_002",
+    "mode": "NORMAL",
+    "timestamps": {
+      "created": 1782813355096,
+      "aiDecisionAt": 1782813355196,
+      "heldUntil": null,
+      "submitted": 1782813355119,
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "slots": {
+      "blockhashFetchedAt": "429855785",
+      "blockhashCommitment": "confirmed",
+      "blockhashAgeAtSubmit": 7,
+      "submitted": "429855792",
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "tip": {
+      "lamports": 11505,
+      "account": "DttWaMuVvTiduZRnguLF7jNxTgiMBZ1hyAumKUiL2KRL",
+      "percentile": "p75",
+      "derivedFromLiveTipData": true
+    },
+    "aiDecision": {
+      "action": "SUBMIT",
+      "tipPercentile": "p75",
+      "targetLeaderScore": null,
+      "targetLeaderSkipRate": null,
+      "holdSlots": 0,
+      "confidence": "LOW",
+      "reasoning": "Fallback decision: AI evaluation failed. Using p75 tip (11505 lamports) with immediate submission. Blockhash has 143 slots remaining. Manual review recommended.",
+      "flags": [
+        "FALLBACK_DECISION",
+        "AGENT_EVALUATION_FAILED"
+      ]
+    },
+    "outcome": "SUBMITTED",
+    "failureClass": null,
+    "latencies": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "slotDeltas": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "signature": "ccg8cAXtKcuBxNWWDXnwTzY2eTE5Y1tNJAjtXgFnXzsZnJU4LuqswKXzeQwSJRvmW4C7gn5DB8vmsZ3Bq38Yo5Y",
+    "explorerUrl": "https://solscan.io/tx/ccg8cAXtKcuBxNWWDXnwTzY2eTE5Y1tNJAjtXgFnXzsZnJU4LuqswKXzeQwSJRvmW4C7gn5DB8vmsZ3Bq38Yo5Y"
+  },
+  {
+    "bundleId": "255c48f5adac12eb4852392fd7a02536aec582be4394ed064ab1722a767bb9ce",
+    "runId": "prophex_run_003",
+    "mode": "NORMAL",
+    "timestamps": {
+      "created": 1782814090233,
+      "aiDecisionAt": 1782814090333,
+      "heldUntil": null,
+      "submitted": 1782814090247,
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "slots": {
+      "blockhashFetchedAt": "429857606",
+      "blockhashCommitment": "confirmed",
+      "blockhashAgeAtSubmit": 4,
+      "submitted": "429857610",
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "tip": {
+      "lamports": 18029,
+      "account": "DttWaMuVvTiduZRnguLF7jNxTgiMBZ1hyAumKUiL2KRL",
+      "percentile": "p75",
+      "derivedFromLiveTipData": true
+    },
+    "aiDecision": {
+      "action": "SUBMIT",
+      "tipPercentile": "p75",
+      "targetLeaderScore": null,
+      "targetLeaderSkipRate": null,
+      "holdSlots": 0,
+      "confidence": "LOW",
+      "reasoning": "Fallback decision: AI evaluation failed. Using p75 tip (18029 lamports) with immediate submission. Blockhash has 146 slots remaining. Manual review recommended.",
+      "flags": [
+        "FALLBACK_DECISION",
+        "AGENT_EVALUATION_FAILED"
+      ]
+    },
+    "outcome": "SUBMITTED",
+    "failureClass": null,
+    "latencies": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "slotDeltas": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "signature": "4SWAYywDGhtERJturJx59EZAoNXKZw9gdVFTUSxdMb2k4CC9MoQhyckd4Fy8NPpLfJ293UeaprvX4ypbAhkucnos",
+    "explorerUrl": "https://solscan.io/tx/4SWAYywDGhtERJturJx59EZAoNXKZw9gdVFTUSxdMb2k4CC9MoQhyckd4Fy8NPpLfJ293UeaprvX4ypbAhkucnos"
+  },
+  {
+    "bundleId": "be7c1e6d26b425ba3c928a87995e59a3572879d7917a6cdc88e43fa54fd02481",
+    "runId": "prophex_run_004",
+    "mode": "NORMAL",
+    "timestamps": {
+      "created": 1782824427351,
+      "aiDecisionAt": 1782824427451,
+      "heldUntil": null,
+      "submitted": 1782824427358,
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "slots": {
+      "blockhashFetchedAt": "429883189",
+      "blockhashCommitment": "confirmed",
+      "blockhashAgeAtSubmit": 5,
+      "submitted": "429883194",
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "tip": {
+      "lamports": 50127,
+      "account": "96gYZGLnJYVFmbjzopPSU6QiEV5fGqZNyN9nmNhvrZU5",
+      "percentile": "p75",
+      "derivedFromLiveTipData": true
+    },
+    "aiDecision": {
+      "action": "SUBMIT",
+      "tipPercentile": "p75",
+      "targetLeaderScore": null,
+      "targetLeaderSkipRate": null,
+      "holdSlots": 0,
+      "confidence": "LOW",
+      "reasoning": "Fallback decision: AI evaluation failed. Using p75 tip (50127 lamports) with immediate submission. Blockhash has 145 slots remaining. Manual review recommended.",
+      "flags": [
+        "FALLBACK_DECISION",
+        "AGENT_EVALUATION_FAILED"
+      ]
+    },
+    "outcome": "SUBMITTED",
+    "failureClass": null,
+    "latencies": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "slotDeltas": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "signature": "GXZWrD2o1XjZXPrcFh2VofeTgZKeKdcThTCC1UonrM9BjTTQDjpTUfLsrwmY2jcXo8RBLWjz983PbLD3xTnj5Eh",
+    "explorerUrl": "https://solscan.io/tx/GXZWrD2o1XjZXPrcFh2VofeTgZKeKdcThTCC1UonrM9BjTTQDjpTUfLsrwmY2jcXo8RBLWjz983PbLD3xTnj5Eh"
+  },
+  {
+    "bundleId": "prophex_run_005",
+    "runId": "prophex_run_005",
+    "mode": "NORMAL",
+    "timestamps": {
+      "created": 1782826287932,
+      "aiDecisionAt": 1782826288032,
+      "heldUntil": null,
+      "submitted": 1782826288139,
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "slots": {
+      "blockhashFetchedAt": "429887780",
+      "blockhashCommitment": "confirmed",
+      "blockhashAgeAtSubmit": -10,
+      "submitted": "429887770",
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "tip": {
+      "lamports": 28912,
+      "account": "3AVi9Tg9Uo68tJfuvoKvqKNWKkC5wPdSSdeBnizKZ6Zj",
+      "percentile": "p75",
+      "derivedFromLiveTipData": true
+    },
+    "aiDecision": {
+      "action": "SUBMIT",
+      "tipPercentile": "p75",
+      "targetLeaderScore": null,
+      "targetLeaderSkipRate": null,
+      "holdSlots": 0,
+      "confidence": "LOW",
+      "reasoning": "Fallback decision: AI evaluation failed. Using p75 tip (28912 lamports) with immediate submission. Blockhash has 146 slots remaining. Manual review recommended.",
+      "flags": [
+        "FALLBACK_DECISION",
+        "AGENT_EVALUATION_FAILED"
+      ]
+    },
+    "outcome": "SUBMITTED",
+    "failureClass": "FEE_TOO_LOW",
+    "latencies": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "slotDeltas": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "signature": "4P6UqLqC3eVVpQMgFPkzivcaF9vM9GgQvNYkAgvQ7LnjrWojhf6GCmQqeEbtseFj4YtvUAzxkhLwgJZqiNpdTXZS",
+    "explorerUrl": "https://solscan.io/tx/4P6UqLqC3eVVpQMgFPkzivcaF9vM9GgQvNYkAgvQ7LnjrWojhf6GCmQqeEbtseFj4YtvUAzxkhLwgJZqiNpdTXZS"
+  },
+  {
+    "bundleId": "cbadd2eafb6cd15a4b4c1b019ec792e2ddfbb1e183e36f0044c2b953b8216d9b",
+    "runId": "prophex_run_006",
+    "mode": "NORMAL",
+    "timestamps": {
+      "created": 1782826297182,
+      "aiDecisionAt": 1782826297282,
+      "heldUntil": null,
+      "submitted": 1782826297206,
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "slots": {
+      "blockhashFetchedAt": "429887791",
+      "blockhashCommitment": "confirmed",
+      "blockhashAgeAtSubmit": 3,
+      "submitted": "429887794",
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "tip": {
+      "lamports": 28912,
+      "account": "Cw8CFyM9FkoMi7K7Crf6HNQqf4uEMzpKw6QNghXLvLkY",
+      "percentile": "p75",
+      "derivedFromLiveTipData": true
+    },
+    "aiDecision": {
+      "action": "SUBMIT",
+      "tipPercentile": "p75",
+      "targetLeaderScore": null,
+      "targetLeaderSkipRate": null,
+      "holdSlots": 0,
+      "confidence": "LOW",
+      "reasoning": "Fallback decision: AI evaluation failed. Using p75 tip (28912 lamports) with immediate submission. Blockhash has 147 slots remaining. Manual review recommended.",
+      "flags": [
+        "FALLBACK_DECISION",
+        "AGENT_EVALUATION_FAILED"
+      ]
+    },
+    "outcome": "SUBMITTED",
+    "failureClass": null,
+    "latencies": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "slotDeltas": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "signature": "2L6WY7Sn26NnXp7AsvMSY2HA5eUWzCxspbmxHaKey4akuSGNE4gkmCUtzoBHqrAnHbMcn9XRfpg5E3YfxFcTAYtt",
+    "explorerUrl": "https://solscan.io/tx/2L6WY7Sn26NnXp7AsvMSY2HA5eUWzCxspbmxHaKey4akuSGNE4gkmCUtzoBHqrAnHbMcn9XRfpg5E3YfxFcTAYtt"
+  },
+  {
+    "bundleId": "5207ddca0fef2801a61510399a3dd1cc97072c34ce44ac56821edd1e031cd94c",
+    "runId": "prophex_run_007",
+    "mode": "FAULT_INJECTION_STALE_BLOCKHASH",
+    "timestamps": {
+      "created": 1782826542865,
+      "aiDecisionAt": 1782826542965,
+      "heldUntil": null,
+      "submitted": 1782826542984,
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "slots": {
+      "blockhashFetchedAt": "429888411",
+      "blockhashCommitment": "confirmed",
+      "blockhashAgeAtSubmit": -8,
+      "submitted": "429888403",
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "tip": {
+      "lamports": 1083327,
+      "account": "DttWaMuVvTiduZRnguLF7jNxTgiMBZ1hyAumKUiL2KRL",
+      "percentile": "p75",
+      "derivedFromLiveTipData": true
+    },
+    "aiDecision": {
+      "action": "SUBMIT",
+      "tipPercentile": "p75",
+      "targetLeaderScore": null,
+      "targetLeaderSkipRate": null,
+      "holdSlots": 0,
+      "confidence": "LOW",
+      "reasoning": "Fallback decision: AI evaluation failed. Using p75 tip (1083327 lamports) with immediate submission. Blockhash has 147 slots remaining. Manual review recommended.",
+      "flags": [
+        "FALLBACK_DECISION",
+        "AGENT_EVALUATION_FAILED"
+      ]
+    },
+    "outcome": "SUBMITTED",
+    "failureClass": "BLOCKHASH_EXPIRED",
+    "latencies": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "slotDeltas": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "signature": "32wqtxKBXtjWBC4KgznQFzwY3mZStgmPhtP8Pasw5vSgh4cPxmrFS7umiDWq3ZoVwYP3E4jojrsZBkhSUXodvuQv",
+    "explorerUrl": "https://solscan.io/tx/32wqtxKBXtjWBC4KgznQFzwY3mZStgmPhtP8Pasw5vSgh4cPxmrFS7umiDWq3ZoVwYP3E4jojrsZBkhSUXodvuQv"
+  },
+  {
+    "bundleId": "e4926a823b1418807574c882f9da670a4618f94d9f24457eaf718f307e8839f0",
+    "runId": "prophex_run_008",
+    "mode": "FAULT_INJECTION_LOW_TIP",
+    "timestamps": {
+      "created": 1782826720038,
+      "aiDecisionAt": 1782826720138,
+      "heldUntil": null,
+      "submitted": 1782826720089,
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "slots": {
+      "blockhashFetchedAt": "429888853",
+      "blockhashCommitment": "confirmed",
+      "blockhashAgeAtSubmit": -6,
+      "submitted": "429888847",
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "tip": {
+      "lamports": 28408,
+      "account": "96gYZGLnJYVFmbjzopPSU6QiEV5fGqZNyN9nmNhvrZU5",
+      "percentile": "p75",
+      "derivedFromLiveTipData": true
+    },
+    "aiDecision": {
+      "action": "SUBMIT",
+      "tipPercentile": "p75",
+      "targetLeaderScore": null,
+      "targetLeaderSkipRate": null,
+      "holdSlots": 0,
+      "confidence": "LOW",
+      "reasoning": "Fallback decision: AI evaluation failed. Using p75 tip (28408 lamports) with immediate submission. Blockhash has 148 slots remaining. Manual review recommended.",
+      "flags": [
+        "FALLBACK_DECISION",
+        "AGENT_EVALUATION_FAILED"
+      ]
+    },
+    "outcome": "SUBMITTED",
+    "failureClass": "FEE_TOO_LOW",
+    "latencies": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "slotDeltas": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "signature": "VR3wLaB1P5VpPGsxb7iGsy4waJ7Kv5zk84heC7McutgipV68JshXa2BdJ96R9mzZypDJX43eAi68XmYLqRzAVf8",
+    "explorerUrl": "https://solscan.io/tx/VR3wLaB1P5VpPGsxb7iGsy4waJ7Kv5zk84heC7McutgipV68JshXa2BdJ96R9mzZypDJX43eAi68XmYLqRzAVf8"
+  },
+  {
+    "bundleId": "prophex_run_009",
+    "runId": "prophex_run_009",
+    "mode": "NORMAL",
+    "timestamps": {
+      "created": 1782826896277,
+      "aiDecisionAt": 1782826896377,
+      "heldUntil": null,
+      "submitted": null,
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "slots": {
+      "blockhashFetchedAt": "429889286",
+      "blockhashCommitment": "confirmed",
+      "blockhashAgeAtSubmit": 0,
+      "submitted": null,
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "tip": {
+      "lamports": 114392,
+      "account": "ADaUMid9yfUytqMBgopwjb2DTLSokTSzL1IfygL5kd26",
+      "percentile": "p75",
+      "derivedFromLiveTipData": true
+    },
+    "aiDecision": {
+      "action": "SUBMIT",
+      "tipPercentile": "p75",
+      "targetLeaderScore": null,
+      "targetLeaderSkipRate": null,
+      "holdSlots": 0,
+      "confidence": "LOW",
+      "reasoning": "Fallback decision: AI evaluation failed. Using p75 tip (114392 lamports) with immediate submission. Blockhash has 147 slots remaining. Manual review recommended.",
+      "flags": [
+        "FALLBACK_DECISION",
+        "AGENT_EVALUATION_FAILED"
+      ]
+    },
+    "outcome": "FAILED",
+    "failureClass": "UNKNOWN",
+    "latencies": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "slotDeltas": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "signature": null,
+    "explorerUrl": null
+  },
+  {
+    "bundleId": "42acdfd6df6bcc08fc8038b13350088a9cb61521d7e781bbb76b8a376eda21d9",
+    "runId": "prophex_run_010",
+    "mode": "NORMAL",
+    "timestamps": {
+      "created": 1782826900477,
+      "aiDecisionAt": 1782826900577,
+      "heldUntil": null,
+      "submitted": 1782826900502,
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "slots": {
+      "blockhashFetchedAt": "429889300",
+      "blockhashCommitment": "confirmed",
+      "blockhashAgeAtSubmit": 1,
+      "submitted": "429889301",
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "tip": {
+      "lamports": 114392,
+      "account": "ADuUkR4vqLUMWXxW9gh6D6L8pMSawimctcNZ5pGwDcEt",
+      "percentile": "p75",
+      "derivedFromLiveTipData": true
+    },
+    "aiDecision": {
+      "action": "SUBMIT",
+      "tipPercentile": "p75",
+      "targetLeaderScore": null,
+      "targetLeaderSkipRate": null,
+      "holdSlots": 0,
+      "confidence": "LOW",
+      "reasoning": "Fallback decision: AI evaluation failed. Using p75 tip (114392 lamports) with immediate submission. Blockhash has 149 slots remaining. Manual review recommended.",
+      "flags": [
+        "FALLBACK_DECISION",
+        "AGENT_EVALUATION_FAILED"
+      ]
+    },
+    "outcome": "SUBMITTED",
+    "failureClass": null,
+    "latencies": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "slotDeltas": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "signature": "5XyjqcP78ALeqoGx7cKoMa1nMnPvasLnReDQvCK54anXypsyMc57tdWtngaadXZap4jhMPP3LBDrvePUEFRJWNa2",
+    "explorerUrl": "https://solscan.io/tx/5XyjqcP78ALeqoGx7cKoMa1nMnPvasLnReDQvCK54anXypsyMc57tdWtngaadXZap4jhMPP3LBDrvePUEFRJWNa2"
+  },
+  {
+    "bundleId": "prophex_run_011",
+    "runId": "prophex_run_011",
+    "mode": "NORMAL",
+    "timestamps": {
+      "created": 1782827070832,
+      "aiDecisionAt": 1782827070932,
+      "heldUntil": null,
+      "submitted": 1782827070852,
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "slots": {
+      "blockhashFetchedAt": "429889712",
+      "blockhashCommitment": "confirmed",
+      "blockhashAgeAtSubmit": 2,
+      "submitted": "429889714",
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "tip": {
+      "lamports": 23207,
+      "account": "HFqU5x63VTqvN7XZ6EcDrLCjFwjBkKaHLdBBSRBBQKT",
+      "percentile": "p75",
+      "derivedFromLiveTipData": true
+    },
+    "aiDecision": {
+      "action": "SUBMIT",
+      "tipPercentile": "p75",
+      "targetLeaderScore": null,
+      "targetLeaderSkipRate": null,
+      "holdSlots": 0,
+      "confidence": "LOW",
+      "reasoning": "Fallback decision: AI evaluation failed. Using p75 tip (23207 lamports) with immediate submission. Blockhash has 148 slots remaining. Manual review recommended.",
+      "flags": [
+        "FALLBACK_DECISION",
+        "AGENT_EVALUATION_FAILED"
+      ]
+    },
+    "outcome": "FAILED",
+    "failureClass": "FEE_TOO_LOW",
+    "latencies": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "slotDeltas": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "signature": "wgWdScSCyq4b2i7vkrSRnYojqAhyij4jAZ8WaH5CpNs1v5p5MGEFWHEmUXbN74P2ewgFEemTVP3XVeqB7Qbr6Co",
+    "explorerUrl": "https://solscan.io/tx/wgWdScSCyq4b2i7vkrSRnYojqAhyij4jAZ8WaH5CpNs1v5p5MGEFWHEmUXbN74P2ewgFEemTVP3XVeqB7Qbr6Co"
+  },
+  {
+    "bundleId": "b777ad6274c2a9f3f2a3ebbc3131a143ee1131b892357a60717f412b03e61cbc",
+    "runId": "prophex_run_012",
+    "mode": "NORMAL",
+    "timestamps": {
+      "created": 1782827077094,
+      "aiDecisionAt": 1782827077194,
+      "heldUntil": null,
+      "submitted": 1782827077100,
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "slots": {
+      "blockhashFetchedAt": "429889730",
+      "blockhashCommitment": "confirmed",
+      "blockhashAgeAtSubmit": 1,
+      "submitted": "429889731",
+      "processed": null,
+      "confirmed": null,
+      "finalized": null
+    },
+    "tip": {
+      "lamports": 23207,
+      "account": "DttWaMuVvTiduZRnguLF7jNxTgiMBZ1hyAumKUiL2KRL",
+      "percentile": "p75",
+      "derivedFromLiveTipData": true
+    },
+    "aiDecision": {
+      "action": "SUBMIT",
+      "tipPercentile": "p75",
+      "targetLeaderScore": null,
+      "targetLeaderSkipRate": null,
+      "holdSlots": 0,
+      "confidence": "LOW",
+      "reasoning": "Fallback decision: AI evaluation failed. Using p75 tip (23207 lamports) with immediate submission. Blockhash has 149 slots remaining. Manual review recommended.",
+      "flags": [
+        "FALLBACK_DECISION",
+        "AGENT_EVALUATION_FAILED"
+      ]
+    },
+    "outcome": "SUBMITTED",
+    "failureClass": null,
+    "latencies": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "slotDeltas": {
+      "submittedToProcessed": null,
+      "processedToConfirmed": null,
+      "confirmedToFinalized": null
+    },
+    "signature": "C2RaBYHpoZNxhriLM62bZpmSPE2HMr4d4FsS6VUE86Ln6JVH6837nfE22VEeNAo6YsUUqvqo1yzb9cCRfcA9ivD",
+    "explorerUrl": "https://solscan.io/tx/C2RaBYHpoZNxhriLM62bZpmSPE2HMr4d4FsS6VUE86Ln6JVH6837nfE22VEeNAo6YsUUqvqo1yzb9cCRfcA9ivD"
+  }
+]

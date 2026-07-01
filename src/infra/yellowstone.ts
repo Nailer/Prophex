@@ -107,13 +107,24 @@ export class YellowstoneClient extends EventEmitter {
       this.grpcStream.on('error', (err: Error) => {
         console.error(`[Yellowstone] gRPC stream error: ${err.message}`);
         this.isConnected = false;
-        this.reconnect();
+        if (err.message.includes('UNAUTHENTICATED') || err.message.includes('401') || err.message.includes('403')) {
+          console.warn('[Yellowstone] Authentication error detected. Falling back to WebSocket immediately.');
+          if (this.grpcStream) {
+            try { this.grpcStream.cancel(); } catch {}
+            this.grpcStream = null;
+          }
+          this.connectWebSocket().catch(console.error);
+        } else if (this.mode === 'grpc') {
+          this.reconnect();
+        }
       });
 
       this.grpcStream.on('end', () => {
         console.log('[Yellowstone] gRPC stream ended');
         this.isConnected = false;
-        this.reconnect();
+        if (this.mode === 'grpc') {
+          this.reconnect();
+        }
       });
 
       this.mode = 'grpc';

@@ -20,6 +20,7 @@ export class LeaderSchedule {
   private cachedSchedule: Map<number, string> = new Map(); // slot → leader pubkey
   private cachedEpoch: number | null = null;
   private jitoValidators = new Set<string>();
+  private scheduleFetchFailed = false;
 
   constructor(connection: web3.Connection, scorer: ValidatorHealthScorer) {
     this.connection = connection;
@@ -31,6 +32,10 @@ export class LeaderSchedule {
    * Fetches from RPC and caches locally.
    */
   async refreshSchedule(): Promise<void> {
+    if (this.scheduleFetchFailed) {
+      return;
+    }
+
     try {
       const epochInfo = await this.connection.getEpochInfo();
       const currentEpoch = epochInfo.epoch;
@@ -40,9 +45,15 @@ export class LeaderSchedule {
         return;
       }
 
-      console.log(`[LeaderSchedule] Fetching schedule for epoch ${currentEpoch}...`);
+      console.log(`[LeaderSchedule] Fetching schedule for epoch ${currentEpoch} (with 8s timeout)...`);
 
-      const schedule = await this.connection.getLeaderSchedule();
+      // Wrap RPC call in an 8-second timeout
+      const schedulePromise = this.connection.getLeaderSchedule();
+      const timeoutPromise = new Promise<null>((_, reject) =>
+        setTimeout(() => reject(new Error('RPC getLeaderSchedule timed out')), 8000)
+      );
+
+      const schedule = await Promise.race([schedulePromise, timeoutPromise]);
       if (!schedule) {
         console.warn('[LeaderSchedule] No schedule returned from RPC');
         return;
@@ -66,7 +77,8 @@ export class LeaderSchedule {
       console.log(`[LeaderSchedule] Cached ${this.cachedSchedule.size} slot assignments for epoch ${currentEpoch}`);
 
     } catch (err) {
-      console.error(`[LeaderSchedule] Failed to refresh: ${(err as Error).message}`);
+      console.warn(`[LeaderSchedule] Bypassing full schedule refresh: ${(err as Error).message}`);
+      this.scheduleFetchFailed = true; // Avoid retrying slow call on future runs
     }
   }
 
@@ -78,6 +90,11 @@ export class LeaderSchedule {
     console.log('[LeaderSchedule] Detecting Jito-enabled validators...');
 
     try {
+      if (this.cachedSchedule.size === 0) {
+        console.log('[LeaderSchedule] Schedule is empty. Skipping active Jito detection (will use heuristic).');
+        return;
+      }
+
       // Check a few tip accounts for recent signatures
       const tipAccount = new web3.PublicKey(JITO_TIP_ACCOUNTS[0]);
       const signatures = await this.connection.getSignaturesForAddress(tipAccount, { limit: 50 });
@@ -135,7 +152,7 @@ export class LeaderSchedule {
       }
     }
 
-    // If we couldn't find leaders from the schedule (e.g., epoch boundary),
+    // If we couldn't find leaders from the schedule (e.g., epoch boundary or timeout),
     // use getSlotLeaders RPC as fallback
     if (leaders.length === 0) {
       try {
@@ -146,7 +163,13 @@ export class LeaderSchedule {
 
         for (let i = 0; i < slotLeaders.length && leaders.length < count; i++) {
           const leader = slotLeaders[i].toBase58();
-          const isJito = this.jitoValidators.has(leader);
+          // Fallback heuristic: assume ~75% of validators run Jito on Mainnet if we don't have the schedule
+          const isJito = this.jitoValidators.size > 0 
+            ? this.jitoValidators.has(leader) 
+            : (i % 4 !== 2); // 75% distribution
+
+          // Seed score for the fallback leader
+          if (isJito) this.scorer.setJitoStatus(leader, true);
           const healthScore = this.scorer.computeScore(leader);
 
           leaders.push({
